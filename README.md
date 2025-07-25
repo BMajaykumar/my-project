@@ -109,8 +109,3 @@ You are free to use, modify, and distribute it for personal or educational purpo
 * Add dark mode switch
 
 ```
-
----
-
-Let me know if you'd like a **GitHub Pages deployment section** or **add screenshots**. You can also include this in your GitHub repo's landing page.
-```
