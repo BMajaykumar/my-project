@@ -10,12 +10,6 @@ This project demonstrates simple client-side form handling, validation, and togg
 
 ---
 
-## 📸 Preview
-
-![Login UI Screenshot](screenshot.png) <!-- Optional if you add screenshots -->
-
----
-
 ## 🧰 Tech Stack
 
 - HTML5
