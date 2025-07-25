@@ -1,4 +1,4 @@
- body {
+body {
             background: #f0f2f5;
             font-family: Arial, sans-serif;
             display: flex;
@@ -52,4 +52,22 @@
             border-radius: 4px;
             margin-bottom: 16px;
             display: none;
+        }
+        .login-container form {
+            margin-bottom: 8px;
+        }
+        .toggle-link {
+            text-align: center;
+            margin-top: 12px;
+        }
+        .toggle-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .toggle-link a:hover {
+            color: #0056b3;
+            text-decoration: underline;
         }

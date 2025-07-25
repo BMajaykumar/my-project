@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2 id="formTitle">Login</h2>
         <div class="error-message" id="errorMsg"></div>
         <form id="loginForm" autocomplete="off">
             <label for="username">Username</label>
@@ -19,6 +19,21 @@
             
             <button type="submit">Login</button>
         </form>
+        <form id="signupForm" autocomplete="off" style="display:none;">
+            <label for="signupUsername">Username</label>
+            <input type="text" id="signupUsername" name="signupUsername" required>
+            
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" name="signupPassword" required>
+            
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="toggle-link">
+            <a href="#" id="toggleForm">Don't have an account? Sign Up</a>
+        </div>
     </div>
 </body>
 </html>
