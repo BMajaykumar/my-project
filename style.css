@@ -1,73 +1,201 @@
-body {
-            background: #f0f2f5;
-            font-family: Arial, sans-serif;
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
             display: flex;
-            height: 100vh;
+            justify-content: center;
             align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            min-height: 550px;
+        }
+
+        .welcome-section {
+            flex: 1;
+            background: linear-gradient(to bottom right, #4776E6, #8E54E9);
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .welcome-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 350px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
         }
-        .login-container {
-            background: #fff;
-            padding: 32px 24px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            width: 320px;
-        }
-        .login-container h2 {
-            margin-bottom: 24px;
+
+        .form-header {
             text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
             color: #333;
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
-        .login-container label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
+
+        .form-header p {
+            color: #777;
         }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+        }
+
+        .form-group input {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+            padding: 15px 15px 15px 45px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
         }
-        .login-container button {
+
+        .form-group input:focus {
+            border-color: #4776E6;
+            box-shadow: 0 0 0 3px rgba(71, 118, 230, 0.2);
+            outline: none;
+        }
+
+        .btn {
             width: 100%;
-            padding: 10px;
-            background: #007bff;
-            color: #fff;
+            padding: 15px;
+            background: linear-gradient(to right, #4776E6, #8E54E9);
             border: none;
-            border-radius: 4px;
-            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .form-footer a {
+            color: #4776E6;
+            text-decoration: none;
+            font-weight: 600;
             cursor: pointer;
         }
-        .login-container button:hover {
-            background: #0056b3;
+
+        .form-footer a:hover {
+            text-decoration: underline;
         }
+
+        .password-container {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #777;
+        }
+
         .error-message {
-            color: #d8000c;
-            background: #ffd2d2;
-            padding: 8px;
-            border-radius: 4px;
-            margin-bottom: 16px;
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-top: 5px;
             display: none;
         }
-        .login-container form {
-            margin-bottom: 8px;
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
         }
-        .toggle-link {
-            text-align: center;
-            margin-top: 12px;
-        }
-        .toggle-link a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 15px;
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+            color: #555;
+            font-size: 1.2rem;
             cursor: pointer;
-            transition: color 0.2s;
+            transition: all 0.3s;
         }
-        .toggle-link a:hover {
-            color: #0056b3;
-            text-decoration: underline;
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .facebook { color: #3b5998; }
+        .google { color: #db4a39; }
+        .twitter { color: #1da1f2; }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .welcome-section {
+                padding: 30px 20px;
+            }
+            
+            .form-container {
+                padding: 30px 20px;
+            }
         }
