@@ -23,8 +23,8 @@ This project demonstrates simple client-side form handling, validation, and togg
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/BMajaykumar/my-project.git
+cd my-project
 ````
 
 ### 2. **Open in Browser**
